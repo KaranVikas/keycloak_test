@@ -1,0 +1,21 @@
+# General
+# ------------------------------------------------------------------------------
+USE_DOCKER=yes
+IPYTHONDIR=/app/.ipython
+# Redis
+# ------------------------------------------------------------------------------
+REDIS_URL=redis://redis:6379/0
+
+# Celery
+# ------------------------------------------------------------------------------
+
+# Flower
+CELERY_FLOWER_USER=zsgUWRZzjUtuDtMpZrzTaIJAEXMQFnAt
+CELERY_FLOWER_PASSWORD=29Th2TlSV5esC4AvCkSmw2eDffIj7uZjjqyUWhkDY796ilv7pn7VzmIPkHK1KMCp
+
+# Add these to your existing environment variables
+KEYCLOAK_SERVER_URL=http://keycloak:8080
+KEYCLOAK_REALM=todo-realm
+KEYCLOAK_CLIENT_ID=todo-client
+KEYCLOAK_CLIENT_SECRET=your-generated-client-secret
+KEYCLOAK_REDIRECT_URI=http://localhost:8000/auth/callback/
